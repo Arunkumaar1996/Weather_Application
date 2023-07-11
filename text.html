@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Wheather Application</title>
+</head>
+<body id="bg">
+    <div class="container">
+        <section class="headder"><h1>Wheather Application</h1></section>
+       
+       <hr> <section class="content">
+            <input type="text" Id="inputValues" placeholder="Enter City...">
+            <button onclick="getWeather(),bgChange()" id="button1">Search</button>
+        </section>
+		
+        <section class="footer">
+            <div><h1>City : <span id="cityName">---</span> / <span id="country"></span></h1></div>
+            <div><h1>Description : <span id="description">---</span></h1></div>
+            <div><h1>Temperature : <span id="temperature">---</span></h1></div>
+            <div><h1>Humidity : <span id="humidity">---</span></h1></div>
+            <div><h1>Wind Speed : <span id="windSpeed">---</span></h1></div>
+            <div id="image"></div>
+        </section>
+        
+    </div>
+    <div id="date"><h1><span id="time"></span></h1></div>
+	<div id="error"></div>
+    <script src="index.js"></script>
+</body>
+</html>
